@@ -133,13 +133,6 @@ Tenderi (ID_Tendera, ID_Partije)
 | `Value` | category | Decision on the complaint (16 types). Most common: complaint accepted (615), rejected as unfounded (322), partly accepted (132) | Usvaja se žalba |
 | `Broj Rješenja po žalbi` | int | Number of decisions of this type | 1 |
 
----
-
-## 6. Data quality notes
-
-- **Duplicates:** half of the `Tenderi` rows and about a quarter of the `Ponude` rows are exact duplicates. Remove them before analysis.
-- **Rows per lot:** one lot can have several rows in `Tenderi` because of several phases (37,802 lots) or several contracts (16,935 lots).
-- **Bids per lot:** the number of different bidders (unique `PIB`) per lot in `Ponude` matches the highest `Broj podnetih ponuda u fazi` for that lot in 99.7% of lots.
 - **Lots without bids:** 7,973 lots in `Tenderi` have no rows in `Ponude`, most likely because no bids were received.
 - **Unmatched tenders:** 16 tenders in `Ponude` and `Odluka o ponistenju` are not in `Tenderi`.
 - **Encoding:** one title contains a hidden control character (shown as `_x0002_` in Excel).
