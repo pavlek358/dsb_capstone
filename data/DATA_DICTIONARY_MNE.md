@@ -4,7 +4,7 @@
 
 | Item | Description |
 |---|---|
-| **Source** | Montenegro's electronic public procurement system. Export provided by the system administrator, data publlicly available on cejn.gov.me |
+| **Source** | Montenegro's electronic public procurement system. Export provided by the system administrator, data publicly available on cejn.gov.me |
 | **File** | `Data_science_projekat.xlsx` (4 sheets).
 | **Country** | Montenegro (all contracting authorities) |
 | **Time frame** | Tenders published from **2 February 2021** to **16 November 2026** |
